@@ -1,2 +1,3 @@
-# vortech-front-v2-vue
-A Vue version of the vortechmusic.com frontend
+# Vortech Frontend v2
+
+A Vue version of the https://vortechmusic.com frontend.
