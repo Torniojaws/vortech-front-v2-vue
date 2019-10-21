@@ -43,6 +43,7 @@ export default {
         console.log('Update store')
         this.$store.commit('username', this.username)
         this.$store.commit('loggedIn', true)
+        this.$router.go()
       } else {
         console.log('Login for user', this.username, 'is not allowed')
         this.errors.push('You are banned from logging in')

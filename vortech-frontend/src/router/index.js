@@ -14,6 +14,10 @@ const routes = [{
   // Lazy-loaded
   component: () => import(/* webpackChunkName: "releases" */ '../views/Releases.vue')
 }, {
+  path: '/profile',
+  name: 'profile',
+  component: () => import(/* webpackChunkName: "profile" */ '../views/UserProfile.vue')
+}, {
   path: '/logout',
   name: 'logout',
   component: () => import(/* webpackChunkName: "logout" */ '../views/Logout.vue')

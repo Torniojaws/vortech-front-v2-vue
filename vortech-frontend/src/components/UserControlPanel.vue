@@ -1,9 +1,9 @@
 <template>
   <nav id="usercp">
-    Logged in as: {{ username }} |
-    View Profile |
-    Settings |
-    <a href="/logout">Logout</a>
+    Logged in as: <b>{{ username }}</b> &mdash;
+    <router-link to="/profile">View Profile</router-link> |
+    <router-link to="/settings">Settings</router-link> |
+    <router-link to="/logout">Logout</router-link>
   </nav>
 </template>
 
@@ -19,11 +19,12 @@ export default {
 
 <style scoped lang="scss">
 nav#usercp {
-  color: gold;
+  color: silver;
 }
 nav a {
-  color: rgb(192, 192, 230);
+  color: rgb(160, 192, 230);
   text-decoration: none;
+
   &:hover {
     color: white;
   }
