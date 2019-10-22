@@ -14,9 +14,33 @@ const routes = [{
   // Lazy-loaded
   component: () => import(/* webpackChunkName: "releases" */ '../views/Releases.vue')
 }, {
+  path: '/bio',
+  name: 'bio',
+  // Lazy-loaded
+  component: () => import(/* webpackChunkName: "bio" */ '../views/Biography.vue')
+}, {
+  path: '/media',
+  name: 'media',
+  // Lazy-loaded
+  component: () => import(/* webpackChunkName: "media" */ '../views/Media.vue')
+}, {
+  path: '/shop',
+  name: 'shop',
+  // Lazy-loaded
+  component: () => import(/* webpackChunkName: "shop" */ '../views/Shop.vue')
+}, {
+  path: '/guestbook',
+  name: 'guestbook',
+  // Lazy-loaded
+  component: () => import(/* webpackChunkName: "guestbook" */ '../views/Guestbook.vue')
+}, {
   path: '/profile',
   name: 'profile',
   component: () => import(/* webpackChunkName: "profile" */ '../views/UserProfile.vue')
+}, {
+  path: '/settings',
+  name: 'settings',
+  component: () => import(/* webpackChunkName: "settings" */ '../views/UserSettings.vue')
 }, {
   path: '/logout',
   name: 'logout',
