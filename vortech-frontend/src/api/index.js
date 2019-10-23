@@ -1,11 +1,22 @@
-// TODO: This will be used to send requests to the backend
+import axios from 'axios'
 
-const baseUrl = 'localhost'
+const baseUrl = 'https://vortechmusic.com/api/1.0'
 
-const api = () => {
-  console.log(`sending request to ${baseUrl}`)
+const get = async (endpoint) => {
+  const url = baseUrl + endpoint
+  const config = {
+    params: {}, // eg. GET /url?param1=something
+    headers: {} // eg. 'Authorization': 'Bearer <token>'
+  }
+  try {
+    console.log('Requesting', url)
+    const response = await axios.get(url, config)
+    return response
+  } catch (error) {
+    return { error }
+  }
 }
 
-module.exports = {
-  api
+export default {
+  get
 }

@@ -1,14 +1,16 @@
 import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import { VueSpinners } from '@saeris/vue-spinners'
+
 import App from './App.vue'
-import LoginForm from './components/LoginForm.vue'
-import UserControlPanel from './components/UserControlPanel.vue'
+import './custom.scss'
 import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
 
-Vue.component('login-form', LoginForm)
-Vue.component('user-control-panel', UserControlPanel)
+Vue.use(BootstrapVue)
+Vue.use(VueSpinners)
 
 new Vue({
   router,
