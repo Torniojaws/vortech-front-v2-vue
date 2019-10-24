@@ -1,29 +1,21 @@
 <template>
   <b-container>
     <Header />
-    <Menu />
-    <router-view />
+    <Contents />
+    <Footer />
   </b-container>
 </template>
 
 <script>
+import Contents from '@/components/Contents.vue'
+import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
-import Menu from '@/components/Menu.vue'
 
 export default {
   components: {
-    Header,
-    Menu
+    Contents,
+    Footer,
+    Header
   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>

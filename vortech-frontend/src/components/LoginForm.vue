@@ -1,7 +1,7 @@
 <template>
   <form id="login" v-on:submit.prevent>
-    <input type="text" v-model="username" name="username" placeholder="Username" />
-    <input type="password" v-model="password" name="password" placeholder="Password" />
+    <input type="text" v-model="username" name="username" placeholder="Username" class="inputField" />
+    <input type="password" v-model="password" name="password" placeholder="Password" class="inputField" />
     <input type="submit" name="submit" value="Login" v-on:click="checkLogin" />
     <!-- Error handling -->
     <div class="error" v-if="errors.length">
@@ -23,7 +23,7 @@ export default {
   methods: {
     checkLogin (e) {
       this.errors = []
-      // Validate input
+      // Validate input. TODO: Joi schema
       if (!this.username) {
         this.errors.push('Username required')
         console.log('No username')
@@ -37,6 +37,7 @@ export default {
 
       // Check login
       console.log(`Checking login for username: ${this.username}`)
+      // TODO: Use the backend login API, when done with testing the UI
       if (this.username === 'test' && this.password === 'test') {
         console.log('Logging in as "test"...')
         // Update store
@@ -46,7 +47,7 @@ export default {
         this.$router.go()
       } else {
         console.log('Login for user', this.username, 'is not allowed')
-        this.errors.push('You are banned from logging in')
+        this.errors.push('Invalid login')
         this.username = ''
         this.password = ''
       }
@@ -57,8 +58,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .error {
   color: red;
+}
+input {
+  background-color: black;
+  color: white;
+  font-size: 0.8em !important;
+
+  &.inputField {
+    width: 33%;
+  }
 }
 </style>

@@ -1,36 +1,33 @@
 <template>
   <header>
-    <Logo />
-    <aside class="top-right">
-      <LoginForm v-if="!loggedIn" />
-      <UserControlPanel v-if="loggedIn" />
-    </aside>
+    <b-row id="header-top">
+      <b-col sm="0" md="4"></b-col>
+      <b-col sm="12" md="4">
+        <Logo />
+      </b-col>
+      <b-col sm="12" md="4">
+        <UserPanel />
+      </b-col>
+    </b-row>
+    <b-row id="header-menu">
+      <b-col sm="12">
+        <Menu />
+      </b-col>
+    </b-row>
   </header>
 </template>
 
 <script>
 import Logo from '@/components/Logo.vue'
-import LoginForm from '@/components/LoginForm.vue'
-import UserControlPanel from '@/components/UserControlPanel.vue'
+import UserPanel from '@/components/UserPanel.vue'
+import Menu from '@/components/Menu.vue'
 
 export default {
+  name: 'Header',
   components: {
-    LoginForm,
     Logo,
-    UserControlPanel
-  },
-  data () {
-    return {
-      loggedIn: this.$store.state.loggedIn
-    }
+    Menu,
+    UserPanel
   }
 }
 </script>
-
-<style>
-.top-right {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-</style>
