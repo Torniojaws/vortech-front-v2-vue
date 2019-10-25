@@ -32,6 +32,7 @@ nav a {
     color: white;
   }
 }
+/* The below make sure the "Logged in as..." text is always in one row */
 @media screen and (max-width: 412px) {
   nav#usercp {
     font-size: 0.8em;

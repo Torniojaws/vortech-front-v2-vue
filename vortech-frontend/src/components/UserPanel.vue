@@ -1,8 +1,8 @@
 <template>
-  <b-row id="loginBar">
+  <b-col id="loginBar">
     <LoginForm v-if="!loggedIn" />
     <UserControlPanel v-if="loggedIn" />
-  </b-row>
+  </b-col>
 </template>
 
 <script>
