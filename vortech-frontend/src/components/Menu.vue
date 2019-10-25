@@ -31,4 +31,15 @@
     }
   }
 }
+@media screen and (max-width: 420px) {
+  #menu {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 350px) {
+  #menu {
+    font-size: 0.6em;
+    padding: 10px;
+  }
+}
 </style>

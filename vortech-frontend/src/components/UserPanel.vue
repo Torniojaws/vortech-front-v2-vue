@@ -1,8 +1,8 @@
 <template>
-  <aside>
+  <b-row id="loginBar">
     <LoginForm v-if="!loggedIn" />
     <UserControlPanel v-if="loggedIn" />
-  </aside>
+  </b-row>
 </template>
 
 <script>
@@ -22,3 +22,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+#loginBar {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  #loginBar {
+    text-align: center;
+  }
+}
+</style>

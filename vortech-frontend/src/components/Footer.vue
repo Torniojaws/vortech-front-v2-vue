@@ -19,7 +19,8 @@ export default {
 
 <style>
 #footer {
-  padding-top: 30px;
+  color: rgb(32, 64, 96);
+  padding: 30px 0 15px 0;
   text-align: center;
 }
 </style>

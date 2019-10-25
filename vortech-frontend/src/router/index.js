@@ -42,6 +42,10 @@ const routes = [{
   name: 'settings',
   component: () => import(/* webpackChunkName: "settings" */ '../views/UserSettings.vue')
 }, {
+  path: '/register',
+  name: 'register',
+  component: () => import(/* webpackChunkName: "register" */ '../views/Register.vue')
+}, {
   path: '/logout',
   name: 'logout',
   component: () => import(/* webpackChunkName: "logout" */ '../views/Logout.vue')

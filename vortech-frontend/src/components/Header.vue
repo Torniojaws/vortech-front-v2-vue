@@ -1,12 +1,11 @@
 <template>
   <header>
     <b-row id="header-top">
-      <b-col sm="0" md="4"></b-col>
-      <b-col sm="12" md="4">
-        <Logo />
-      </b-col>
-      <b-col sm="12" md="4">
+      <b-col sm="12">
         <UserPanel />
+      </b-col>
+      <b-col sm="12">
+        <Logo />
       </b-col>
     </b-row>
     <b-row id="header-menu">
