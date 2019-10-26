@@ -1,15 +1,29 @@
-# Vortech Frontend v2
+# vortech-frontend
 
-A Vue version of the https://vortechmusic.com frontend.
+## Project setup
+```
+npm install
+```
 
-## Install
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-1. `cd vortech-frontend`
-1. `npm install`
-1. Modify the .env file (TODO: https://cli.vuejs.org/guide/mode-and-env.html#environment-variables)
+### Compiles and minifies for production
+```
+npm run build
+```
 
-## Run
+### Run your unit tests
+```
+npm run test:unit
+```
 
-1. `cd vortech-frontend`
-1. `npm run serve`
-1. Open http://localhost:8080 in a browser
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

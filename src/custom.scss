@@ -1,0 +1,26 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+body {
+  background-color: black;
+}
+
+.contents {
+  padding-top: 30px;
+  color: rgb(230, 230, 242);
+}
+
+@font-face {
+  font-family: 'Xirod-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/xirod.woff') format('woff');
+}
+
+#app {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}

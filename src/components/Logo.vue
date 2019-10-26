@@ -1,0 +1,19 @@
+<template>
+  <h1 id="vortech-logo">Vortech</h1>
+</template>
+
+<style scoped>
+h1 {
+  color: white;
+  font-family: 'Xirod-Regular';
+  font-size: 2.5em;
+  padding: 0;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 8vw;
+    text-align: right;
+  }
+}
+</style>
