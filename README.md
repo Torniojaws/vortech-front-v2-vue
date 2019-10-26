@@ -1,29 +1,38 @@
-# vortech-frontend
+# Vortech Frontend v2.0
 
-## Project setup
+The new frontend for https://vortechmusic.com using Vue.
+
+## Goals
+
+A lot of the features on the current site are unimplemented, and would require heavy changes.
+So to bring it up to speed, Vue will be used and the site will be built from the ground up
+using the classic(?) mobile-first approach.
+
+## Docker
+
+At some point, use Docker for easier deployment.
+
+## Setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Run
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Build
 ```
 npm run build
 ```
 
-### Run your unit tests
+## Tests
 ```
 npm run test:unit
 ```
 
-### Lints and fixes files
+## Lint
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
