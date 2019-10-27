@@ -10,7 +10,8 @@ using the classic(?) mobile-first approach.
 
 ## Docker
 
-The project also includes Docker implementations, which you can use through `make` as follows:
+The project also includes a Docker implementation, which you can use through `make` as follows.
+Note that you must have `docker` and `docker-compose` installed first.
 
 ### Build
 
@@ -19,7 +20,8 @@ To build a Docker container, run `make build`
 ### Run
 
 To run the built Docker container, run `make run`. You must have built it at least once, so
-to be sure, you might as well run `make build run`.
+to be sure, you might as well run `make build run`. Once the container is running, open
+http://localhost:3000 in a browser.
 
 ## Regular steps
 
@@ -34,8 +36,11 @@ npm install
 ```
 npm run serve
 ```
+And then open http://localhost in a browser.
 
 ### Build
+
+To create a production distribution into the `dist/` subdirectory, run:
 ```
 npm run build
 ```
