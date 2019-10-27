@@ -9,7 +9,6 @@ const get = async (endpoint) => {
     headers: {} // eg. 'Authorization': 'Bearer <token>'
   }
   try {
-    console.log('Requesting', url)
     const response = await axios.get(url, config)
     return response
   } catch (error) {

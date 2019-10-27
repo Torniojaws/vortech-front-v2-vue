@@ -1,0 +1,11 @@
+.git/
+node_modules/
+tests/
+
+.editorconfig
+.gitignore
+docker-compose.yml
+Dockerfile
+LICENSE
+package-lock.json
+README.md

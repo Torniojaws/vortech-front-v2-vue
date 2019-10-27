@@ -65,27 +65,21 @@ export default {
       // Validate input. TODO: Joi schema
       if (!this.username) {
         this.errors.push('Username required')
-        console.log('No username')
         return
       }
       if (!this.password) {
         this.errors.push('Password required')
-        console.log('No password')
         return
       }
 
       // Check login
-      console.log(`Checking login for username: ${this.username}`)
       // TODO: Use the backend login API, when done with testing the UI
       if (this.username === 'test' && this.password === 'test') {
-        console.log('Logging in as "test"...')
         // Update store
-        console.log('Update store')
         this.$store.commit('username', this.username)
         this.$store.commit('loggedIn', true)
         this.$router.go()
       } else {
-        console.log('Login for user', this.username, 'is not allowed')
         this.errors.push('Invalid login')
         this.username = ''
         this.password = ''

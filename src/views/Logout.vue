@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     doLogout () {
-      console.log('Doing logout')
       // TODO: Call backend logout that invalidates the token etc
       this.$store.commit('admin', false)
       this.$store.commit('loggedIn', false)
