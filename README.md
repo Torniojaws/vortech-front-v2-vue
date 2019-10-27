@@ -10,29 +10,42 @@ using the classic(?) mobile-first approach.
 
 ## Docker
 
-At some point, use Docker for easier deployment.
+The project also includes Docker implementations, which you can use through `make` as follows:
 
-## Setup
+### Build
+
+To build a Docker container, run `make build`
+
+### Run
+
+To run the built Docker container, run `make run`. You must have built it at least once, so
+to be sure, you might as well run `make build run`.
+
+## Regular steps
+
+Instead of Docker, you can also run the project using regular `npm` commands as follows:
+
+### Setup
 ```
 npm install
 ```
 
-## Run
+### Run
 ```
 npm run serve
 ```
 
-## Build
+### Build
 ```
 npm run build
 ```
 
-## Tests
+### Tests
 ```
 npm run test:unit
 ```
 
-## Lint
+### Lint
 ```
 npm run lint
 ```
