@@ -5,7 +5,12 @@
 </template>
 
 <script>
+import LoginForm from '@/components/LoginForm.vue'
+
 export default {
-  name: 'login'
+  name: 'login',
+  components: {
+    LoginForm
+  }
 }
 </script>
