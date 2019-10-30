@@ -1,0 +1,8 @@
+[
+  { "path": "/", "title": "News" },
+  { "path": "/releases", "title": "Releases" },
+  { "path": "/bio", "title": "Bio" },
+  { "path": "/media", "title": "Media" },
+  { "path": "/shop", "title": "Shop" },
+  { "path": "/guestbook", "title": "Guestbook" }
+]

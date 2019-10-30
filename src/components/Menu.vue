@@ -2,12 +2,9 @@
   <b-row>
     <b-col cols="2" />
     <b-col id="menu">
-      <router-link to="/">News</router-link> |
-      <router-link to="/releases">Releases</router-link> |
-      <router-link to="/bio">Bio</router-link> |
-      <router-link to="/media">Media</router-link> |
-      <router-link to="/shop">Shop</router-link> |
-      <router-link to="/guestbook">Guestbook</router-link>
+      <template v-for="link in menu">
+        <router-link :to="link.path" :key="link.path">{{ link.title }}</router-link> |
+      </template>
     </b-col>
     <b-col cols="2">
       <!-- TODO: Center this vertically -->
@@ -18,9 +15,15 @@
 
 <script>
 import LoginDropdown from '@/components/LoginDropdown.vue'
+import menu from '@/assets/menu.json'
 
 export default {
   name: 'Menu',
+  data () {
+    return {
+      menu
+    }
+  },
   components: {
     LoginDropdown
   }

@@ -13,7 +13,7 @@ h1 {
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 8vw;
-    text-align: right;
+    text-align: left;
   }
 }
 </style>
