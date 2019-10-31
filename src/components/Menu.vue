@@ -7,7 +7,6 @@
       </template>
     </b-col>
     <b-col cols="2">
-      <!-- TODO: Center this vertically -->
       <LoginDropdown />
     </b-col>
   </b-row>
@@ -50,15 +49,9 @@ export default {
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   #menu {
     font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 350px) {
-  #menu {
-    font-size: 0.6em;
-    padding: 10px;
   }
 }
 </style>

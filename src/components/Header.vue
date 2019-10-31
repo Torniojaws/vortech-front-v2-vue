@@ -4,19 +4,10 @@
     <b-col id="smallMenu" class="d-block d-sm-none">
       <SmallMenu />
     </b-col>
-
     <!-- On bigger screens, we show a separate logo and menu bar -->
     <b-col id="normalMenu" class="d-none d-sm-block">
-      <b-row>
-        <b-col>
-          <Logo />
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <Menu />
-        </b-col>
-      </b-row>
+      <Logo />
+      <Menu />
     </b-col>
   </b-row>
 </template>

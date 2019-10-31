@@ -10,10 +10,4 @@ h1 {
   padding: 0;
   text-align: center;
 }
-@media screen and (max-width: 576px) {
-  h1 {
-    font-size: 8vw;
-    text-align: left;
-  }
-}
 </style>
